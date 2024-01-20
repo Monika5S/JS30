@@ -4,8 +4,8 @@ body {
 }
 
 h1 {
-    font-size: 60px;
-    margin: 100px auto;
+    font-size: 70px;
+    margin: 80px auto;
     color: lightcyan;
 }
 
@@ -13,19 +13,33 @@ p {
     font-size: 18px;
 }
 
+a {
+    border: 2px solid lightcoral;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: coral;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 .keys {
+
     display: flex;
     justify-content: center;
     column-gap: 20px;
     color: darkslategrey;
+    line-height: 1.8;
 }
 
 .keyBox p {
+    min-width: 70px;
     background-color: transparent;
     border: transparent;
     box-shadow: 0 0 4px rebeccapurple;
     border-radius: 20px;
-    padding: 15px;
+    padding: 15px 20px;
     transition: all 0.09s ease;
 }
 
