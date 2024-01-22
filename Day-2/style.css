@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    color: rgb(37, 63, 63);
+}
+
+a {
+    border: 2px solid lightcoral;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: coral;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(47, 30, 92), rgb(38, 174, 174));
+}
+
+.clock-container {
+    height: fit-content;
+    margin: 20px auto;
+    padding: 45px 100px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgb(150, 190, 190);
+}
+
+.clock-rounded {
+    padding: 5%;
+    border: 3px solid rgb(147, 137, 188);
+    box-shadow: 0 0 8px rgb(167, 154, 255);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.clock-square {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgb(48, 79, 79);
+}
+
+.hand {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 150px;
+    width: 50%;
+    border: 1.5px solid rgb(37, 201, 193);
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    /* transition: all 0.05s; */
+    transition-timing-function: cubic-bezier(0.1, 2, 0.8, 1);
+}
