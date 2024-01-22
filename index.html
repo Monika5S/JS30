@@ -12,12 +12,8 @@
       }
 
       body {
-        background: linear-gradient(darkslateblue, purple);
-        color: cornflowerblue;
-        padding: 20px;
-        text-shadow: 1px 1px 10px darkslategrey;
-        text-align: center;
-        line-height: 1.5;
+        padding: 0;
+        margin: 0;
       }
 
       p {
@@ -26,6 +22,8 @@
 
       img {
         width: 600px;
+        height: 400px;
+        object-fit: cover;
         display: block;
         padding: 10px;
         background-color: darkslateblue;
@@ -41,46 +39,58 @@
         text-decoration: underline;
       }
 
+      .challenges-container {
+        background: linear-gradient(darkslateblue, rgb(84, 1, 84));
+        color: cornflowerblue;
+        padding: 20px 150px;
+        text-shadow: 1px 1px 10px darkslategrey;
+        text-align: center;
+        line-height: 1.5;
+      }
+
       .challenges {
         color: lightcyan;
         display: flex;
         column-gap: 50px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding-top: 50px;
       }
     </style>
   </head>
   <body>
-    <h1>WWCode: Days Of Code Challenge</h1>
-    <h2>#30DaysofVanillaJavaScript</h2>
-    <div class="challenges">
-      <div class="challenge-img">
-        <img src="media/d1.png" alt="" />
-      </div>
-      <div class="challenge-info">
-        <h3>Day 1 : Drum Kit</h3>
-        <p>Play Sounds by pressing keys on the Keyboard!</p>
-        <br />
-        💻<a href="/JS30/Day-1/index.html">See Live</a> 👩‍💻
-        <a href="https://github.com/Monika5S/JS30/tree/main/Day-1"
-          >Source Code</a
-        >
-      </div>
-    </div>
+    <div class="challenges-container">
+      <h1>WWCode: Days Of Code Challenge</h1>
+      <h2>#30DaysofVanillaJavaScript</h2>
 
-    <div class="challenges">
-      <div class="challenge-img">
-        <img src="media/d2.png" alt="clock project image" />
+      <div class="challenges">
+        <div class="challenge-img">
+          <img src="media/d1.png" alt="" />
+        </div>
+        <div class="challenge-info">
+          <h3>Day 1 : Drum Kit</h3>
+          <p>Play Sounds by pressing keys on the Keyboard!</p>
+          <br />
+          💻<a href="/JS30/Day-1/index.html">See Live</a> 👩‍💻
+          <a href="https://github.com/Monika5S/JS30/tree/main/Day-1"
+            >Source Code</a
+          >
+        </div>
       </div>
-      <div class="challenge-info">
-        <h3>Day 2 : Clock</h3>
-        <p>Could you tell me what time it is?</p>
-        <br />
-        💻<a href="/JS30/Day-2/index.html">See Live</a> 👩‍💻
-        <a href="https://github.com/Monika5S/JS30/tree/main/Day-2">
-          Source Code
-        </a>
+
+      <div class="challenges">
+        <div class="challenge-img">
+          <img src="media/d2.png" alt="clock project image" />
+        </div>
+        <div class="challenge-info">
+          <h3>Day 2 : Clock</h3>
+          <p>Could you tell me what time it is?</p>
+          <br />
+          💻<a href="/JS30/Day-2/index.html">See Live</a> 👩‍💻
+          <a href="https://github.com/Monika5S/JS30/tree/main/Day-2">
+            Source Code
+          </a>
+        </div>
       </div>
     </div>
   </body>
