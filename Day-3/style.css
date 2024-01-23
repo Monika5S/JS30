@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --blur: 2px;
+    --spacing: 10px;
+    --base: #fdd190;
+}
+
+body {
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(rgb(38, 114, 220), rgb(202, 203, 134));
+    color: aliceblue;
+}
+
+a {
+    border: 2px solid lightcoral;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: lightcoral;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+label {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    filter: blur(var(--blur));
+}
+
+.container {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.handlers {
+    text-align: left;
+    padding-left: 25px;
+}
+
+
+.img-wrapper {
+    padding: var(--spacing);
+    background-color: var(--base);
+    border: 5px solid aliceblue;
+}

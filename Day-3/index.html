@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="../">Back</a>
+    <h1>Customizer</h1>
+    <div class="container">
+      <div class="handlers">
+        <label for="spacing">Frame Space</label><br />
+        <input
+          type="range"
+          name="spacing"
+          value="10"
+          min="0"
+          max="100"
+          data-sizing="px"
+        />
+        <br /><br />
+
+        <label for="blur">Blur</label><br />
+        <input
+          type="range"
+          name="blur"
+          value="2"
+          min="0"
+          max="10"
+          data-sizing="px"
+        /><br /><br />
+
+        <label for="base">Background Color</label><br />
+        <input type="color" name="base" value="#fdd190" />
+      </div>
+
+      <div class="img-wrapper">
+        <img
+          src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+          alt="mountain"
+        />
+      </div>
+    </div>
+
+    <script src="customize.js"></script>
+  </body>
+</html>

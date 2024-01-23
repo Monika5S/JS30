@@ -26,8 +26,8 @@ function checkTimeToDisplay(time) {
     if (time.seconds < 10) {
       new_time_format.seconds = `0${time.seconds}`;
     }
-    DisplayTimeSquare(new_time_format);
   }
+  DisplayTimeSquare(new_time_format);
 }
 
 function DisplayTimeSquare(time) {
