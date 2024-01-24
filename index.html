@@ -23,7 +23,7 @@
       img {
         width: 600px;
         height: 400px;
-        object-fit: cover;
+        object-fit: contain;
         display: block;
         padding: 10px;
         background-color: darkslateblue;
@@ -51,10 +51,29 @@
       .challenges {
         color: lightcyan;
         display: flex;
-        column-gap: 50px;
         align-items: center;
-        justify-content: space-between;
-        padding-top: 50px;
+        column-gap: 100px;
+        padding: 50px;
+      }
+
+      @media (max-width: 1200px) {
+        .challenges-container {
+          padding: 20px 0;
+        }
+
+        .challenges {
+          display: block;
+        }
+
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      @media (max-width: 700px) {
+        img {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -68,7 +87,7 @@
           <img src="media/d1.png" alt="" />
         </div>
         <div class="challenge-info">
-          <h3>Day 1 : Drum Kit</h3>
+          <h3>Day 1 : Drum Kit 🥁</h3>
           <p>Play Sounds by pressing keys on the Keyboard!</p>
           <br />
           💻<a href="/JS30/Day-1/index.html">See Live</a> 👩‍💻
@@ -83,11 +102,29 @@
           <img src="media/d2.png" alt="clock project image" />
         </div>
         <div class="challenge-info">
-          <h3>Day 2 : Clock</h3>
+          <h3>Day 2 : Clock 🕜</h3>
           <p>Could you tell me what time it is?</p>
           <br />
           💻<a href="/JS30/Day-2/index.html">See Live</a> 👩‍💻
           <a href="https://github.com/Monika5S/JS30/tree/main/Day-2">
+            Source Code
+          </a>
+        </div>
+      </div>
+
+      <div class="challenges">
+        <div class="challenge-img">
+          <img src="media/d3.png" alt="customizer preview" />
+        </div>
+        <div class="challenge-info">
+          <h3>Day 3 : Customizer 🪄</h3>
+          <p>
+            Let's change image container color, spacing <br />or make image
+            blur!
+          </p>
+          <br />
+          💻<a href="/JS30/Day-3/index.html">See Live</a> 👩‍💻
+          <a href="https://github.com/Monika5S/JS30/tree/main/Day-3">
             Source Code
           </a>
         </div>
