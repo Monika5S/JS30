@@ -1,0 +1,90 @@
+a {
+    border: 2px solid lightcoral;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: coral;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(rgb(33, 33, 33), rgb(23, 5, 58));
+}
+
+.panels {
+    overflow: hidden;
+    display: flex;
+    margin: 120px 60px;
+    padding: 20px;
+    height: 450px;
+    border: 3px solid rgb(122, 20, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgb(114, 93, 255);
+    text-transform: uppercase;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        background 0.2s;
+
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.content.open {
+    flex: 4;
+    font-size: 40px;
+}
+
+.content>* {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content>*:first-child {
+    transform: translateY(-100%);
+}
+
+.content>*:last-child {
+    transform: translateY(100%);
+}
+
+/* to view currently open panel first, last content */
+.content.open-active>*:first-child {
+    transform: translateY(0);
+}
+
+.content.open-active>*:last-child {
+    transform: translateY(0);
+}
+
+/* panels */
+.panel-1 {
+    background: linear-gradient(teal, rgb(172, 192, 255));
+}
+
+.panel-2 {
+    background: linear-gradient(rgb(251, 255, 219), rgb(82, 91, 33));
+}
+
+.panel-3 {
+    background: linear-gradient(rgb(112, 83, 112), rgb(63, 38, 203));
+}
+
+.panel-4 {
+    background: linear-gradient(rgb(0, 52, 124) 30%, rgb(255, 218, 233));
+}
+
+.panel-5 {
+    background: linear-gradient(rgb(219, 255, 239), rgb(255, 218, 255));
+}
